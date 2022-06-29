@@ -1,0 +1,213 @@
+public class Ejercicio2 {
+
+   
+    public static void main(String[] args) {
+        scanner opcion;
+
+sout("bienvenido al programa, escoja una opcion para continuar")
++ ("1. crear samurai
+2. ejecutar secuencia
+3. ver lista de muertos
+4. salir");
+
+case opcion{
+1.samurai;
+break;
+2. circulo;
+break;
+3. listacirculardoblemuerta.mostrarlcd;
+break;
+4.return 0
+
+
+    }
+
+ public void circulo{
+
+int numero= (numero total de samurais);
+int samurai;
+int numeromuerto = (math.random(rango=numero samurais))
+
+while (numero samurais !=1){
+get samurai;
+get numeromuerto;
+if (numero = numero muerto){
+Listacirculardoble.elimPos(samurai);
+sout("el samurai" + samurai + "ha muerto");
+listacirculardoblemuerta.insertini(samurai)
+}
+
+}
+
+if (numero=1){
+get samurai;
+sout("el samurai numero" + numero + "ha salido con vida");
+}
+
+}
+
+public void samurai{
+ int samurai= math random (1-8)
+listacirculardoble.insertini(samurai)
+
+}
+
+
+
+
+
+
+
+
+    public class nodo {
+    public int elemento;
+    public nodo siguiente, anterior;
+    
+    public nodo(int e, nodo sig, nodo ant){
+        this.elemento=e;
+        this.siguiente=sig;
+        this.anterior=ant;
+    }
+    }
+    public class ListaCircularDoble {
+    private nodo inicio, fin;
+    private int elem;
+    
+    public void insertIni(int e){
+        nodo nuevo= new nodo(e);
+        if(inicio!=null){
+            nodo aux=inicio;
+            while(aux.siguiente!=inicio){
+                aux.siguiente=nuevo;
+                nuevo.anterior=aux;
+                nuevo.siguiente=inicio;
+                inicio.anterior=nuevo;
+                inicio=nuevo;
+            }
+        }else{
+            inicio=nuevo;
+        }
+    }
+            }
+        }else{
+            fin=nuevo;
+        }
+    }
+    
+    }
+    
+    public void mostrarLCD(){
+        if(inicio!=null){
+            System.out.println("Nulo");
+        }else{
+            nodo aux=inicio;
+            System.out.println("Prinicipio");
+            do{
+                System.out.println("Posicion"+aux.elemento);
+                aux=aux.siguiente;
+            }while(aux!=inicio);
+            System.out.println("Fin");
+        }
+    }
+    
+    public void elimPos(int p){
+        if(inicio!=null){
+            if(p>0){
+                int cont=1;
+                nodo aux=inicio;
+                while((aux.siguiente!=inicio)&&(cont<p)){
+                    cont++;
+                    aux=aux.siguiente;
+                }
+                if(cont==1){
+                    if((aux.siguiente==inicio)){
+                        inicio=null;
+                    }else{
+                        nodo aux2= aux.anterior;
+                        aux2.anterior=aux.siguiente;
+                        aux=aux.siguiente;
+                        aux.anterior=aux2;
+                        inicio=aux;
+                    }
+                }else{
+                    nodo aux2=aux.anterior;
+                    aux.anterior=null;
+                    aux2.siguiente=aux.siguiente;
+                    aux=aux.siguiente;
+                    aux.anterior=aux2;
+                }
+            }
+        }
+    }
+    }
+public class ListaCircularDoblemuerta {
+    private nodo inicio, fin;
+    private int elem;
+    
+    public void insertIni(int e){
+        nodo nuevo= new nodo(e);
+        if(inicio!=null){
+            nodo aux=inicio;
+            while(aux.siguiente!=inicio){
+                aux.siguiente=nuevo;
+                nuevo.anterior=aux;
+                nuevo.siguiente=inicio;
+                inicio.anterior=nuevo;
+                inicio=nuevo;
+            }
+        }else{
+            inicio=nuevo;
+        }
+    }
+    
+        }
+    }
+    
+    }
+    
+    public void mostrarLCD(){
+        if(inicio!=null){
+            System.out.println("Nulo");
+        }else{
+            nodo aux=inicio;
+            System.out.println("Prinicipio");
+            do{
+                System.out.println("Posicion"+aux.elemento);
+                aux=aux.siguiente;
+            }while(aux!=inicio);
+            System.out.println("Fin");
+        }
+    }
+    
+    public void elimPos(int p){
+        if(inicio!=null){
+            if(p>0){
+                int cont=1;
+                nodo aux=inicio;
+                while((aux.siguiente!=inicio)&&(cont<p)){
+                    cont++;
+                    aux=aux.siguiente;
+                }
+                if(cont==1){
+                    if((aux.siguiente==inicio)){
+                        inicio=null;
+                    }else{
+                        nodo aux2= aux.anterior;
+                        aux2.anterior=aux.siguiente;
+                        aux=aux.siguiente;
+                        aux.anterior=aux2;
+                        inicio=aux;
+                    }
+                }else{
+                    nodo aux2=aux.anterior;
+                    aux.anterior=null;
+                    aux2.siguiente=aux.siguiente;
+                    aux=aux.siguiente;
+                    aux.anterior=aux2;
+                }
+            }
+        }
+    }
+    }
+    
+}
